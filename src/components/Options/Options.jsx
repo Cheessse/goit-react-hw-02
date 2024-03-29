@@ -1,5 +1,18 @@
-const Options = () => {
-    console.log('hello');
-}
+import css from "./Options.module.css";
 
-export default Options
+const Options = ({updateFeedback}) => {
+  return (
+    <div className={css.wrapper}>
+      <button onClick={() => updateFeedback('good')}>Good</button>
+      <button onClick={() => updateFeedback('neutral')}>Neutral</button>
+      <button onClick={() => updateFeedback('bad')}>Bad</button>
+      {/* {totalFeedback > 0 && (
+        <button onClick={resetFeedback} className={css.btn}>
+          Reset
+        </button>
+      )} */}
+    </div>
+  );
+};
+
+export default Options;
