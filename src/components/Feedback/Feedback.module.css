@@ -1,11 +1,11 @@
-.feedbackItem {
-    list-style-type: none;
-}
-
 ul {
     margin-right: 40px;
     padding: 0;
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.feedbackItem {
+    list-style-type: none;
 }
